@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <!-- 显示图片 -->
+    <com.example.android.camerasample.view.RotateImageView
+        android:id="@+id/s8s_target_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/divider"
+        android:visibility="invisible" />
+
+    <!-- 自定义的截图View -->
+    <com.example.android.camerasample.view.CaptureView
+        android:id="@+id/s8s_capture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/divider"
+        android:visibility="invisible" />
+
+    <!-- 分割线 -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/s8s_layout_tools"
+        android:background="@color/s8s_white" />
+
+    <!-- 按钮区 -->
+    <RelativeLayout
+        android:id="@+id/s8s_layout_tools"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#3f3f3f">
+
+        <!-- 返回 -->
+        <ImageView
+            android:id="@+id/s8s_edit_redo_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/s8s_edit_back_cof" />
+
+        <!-- 确定 -->
+        <ImageView
+            android:id="@+id/edit_enter_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/s8s_edit_enter_cof" />
+
+        <!-- 旋转 -->
+        <ImageView
+            android:id="@+id/s8s_edit_rotate_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/s8s_edit_rorate_cof" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

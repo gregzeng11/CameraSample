@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/ll_action">
+
+        <com.example.android.library.cameraview.CameraView
+            android:id="@+id/camera_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="false"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/prompt_camera_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_rounded_rectangle"
+            android:text="@string/s8s_camera_tip"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/prompt_scan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/shape_rounded_rectangle"
+            android:text="@string/s8s_keep_fist_line_in_scan"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_rectangel"
+            android:layout_width="750dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_rectangle"
+            android:visibility="gone" />
+
+        <com.example.android.camerasample.view.CameraGridView
+            android:id="@+id/s8seditor_camera_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/s8seditor_camera_ledbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_action"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#66ffffff"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_statue_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_paizhaoquti"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/s8s_camera_status_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/pai_get_question"
+                android:textColor="@color/s8s_camera_text_bg"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_saodanti"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/s8s_camera_status_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/pai_dan_ti"
+                android:textColor="@color/s8s_camera_text_bg"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rb_paizhaodianti"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/s8s_camera_status_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/pai_click_question"
+                android:textColor="@color/s8s_camera_text_bg"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/sao_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/s8s_camera_click_quti_selector"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/take_pic_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/s8s_camera_take_pic_selector"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

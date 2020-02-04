@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PointView">
+        <attr name="inradius" format="dimension"/>
+        <attr name="outradius" format="dimension"/>
+        <attr name="incolor" format="color"/>
+        <attr name="outcolor" format="color"/>
+    </declare-styleable>
+</resources>

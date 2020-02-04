@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CameraSample</string>
+    <string name="s8s_keep_fist_line_in_scan">请将题目第一行置于扫描框内</string>
+    <string name="s8s_camera_tip">题目尽量与参考线平行</string>
+    <string name="s8s_cutimage_tip">一次只能问一个问题哦</string>
+    <string name="s8s_camera_prompt_msg">横平竖直的题目，得到的解答更准确哦~</string>
+    <string name="s8s_camera_prompt_ok">我知道了</string>
+    <string name="s8s_camera_notips">不再提示</string>
+    <string name="pai_dan_ti">扫描搜题</string>
+    <string name="press_to_ti">点击取题</string>
+    <string name="pai_get_question">拍照选题</string>
+    <string name="pai_click_question">拍照点题</string>
+    <string name="once_agin_pai">再拍一次</string>
+    <string name="take_pic">拍照</string>
+    <string name="s8s_alert_rotate">旋转</string>
+    <string name="s8s_txt_back">返回</string>
+    <string name="camera_permission_not_granted">Camera app cannot do anything without camera permission.</string>
+</resources>
